@@ -3,11 +3,11 @@
   <channel>
     <title>Tiernans Comms Closet</title>
     <description>Dont Ask</description>
-    <link>http://blog.lotas-smartman.net/</link>
-    <atom:link href="http://blog.lotas-smartman.net/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 08 May 2017 14:58:04 +0000</pubDate>
-    <lastBuildDate>Mon, 08 May 2017 14:58:04 +0000</lastBuildDate>
-    <generator>Jekyll v3.3.1</generator>
+    <link>https://blog.lotas-smartman.net/</link>
+    <atom:link href="https://blog.lotas-smartman.net/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 30 Aug 2022 15:40:06 -0500</pubDate>
+    <lastBuildDate>Tue, 30 Aug 2022 15:40:06 -0500</lastBuildDate>
+    <generator>Jekyll v3.9.2</generator>
     
       <item>
         <title>Cloudflare and the Future</title>
@@ -36,9 +36,9 @@ as a personal Git and Mercurial Storage area&lt;/a&gt; post will probably go to 
 &lt;p&gt;–Tiernan&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 14 Aug 2015 00:00:00 +0000</pubDate>
-        <link>http://blog.lotas-smartman.net/cloudflare-and-the-future/</link>
-        <guid isPermaLink="true">http://blog.lotas-smartman.net/cloudflare-and-the-future/</guid>
+        <pubDate>Fri, 14 Aug 2015 00:00:00 -0500</pubDate>
+        <link>https://blog.lotas-smartman.net/cloudflare-and-the-future/</link>
+        <guid isPermaLink="true">https://blog.lotas-smartman.net/cloudflare-and-the-future/</guid>
         
         
         <category>Uncategorized</category>
@@ -93,9 +93,9 @@ as a personal Git and Mercurial Storage area&lt;/a&gt; post will probably go to 
 &lt;p&gt;UPDATE 2015/08/13: This site is now hosted on a box in the house, but fronted by &lt;a href=&quot;http://www.cloudflare.com&quot;&gt;CloudFlare&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 24 Apr 2015 00:00:00 +0000</pubDate>
-        <link>http://blog.lotas-smartman.net/blog-move-details/</link>
-        <guid isPermaLink="true">http://blog.lotas-smartman.net/blog-move-details/</guid>
+        <pubDate>Fri, 24 Apr 2015 00:00:00 -0500</pubDate>
+        <link>https://blog.lotas-smartman.net/blog-move-details/</link>
+        <guid isPermaLink="true">https://blog.lotas-smartman.net/blog-move-details/</guid>
         
         
         <category>Uncategorized</category>
@@ -117,9 +117,9 @@ beind their CDN product. Next is to move the &lt;a href=&quot;http://www.geekpho
 rather than later…&lt;/p&gt;
 
 </description>
-        <pubDate>Thu, 23 Apr 2015 00:00:00 +0000</pubDate>
-        <link>http://blog.lotas-smartman.net/finally-moved-to-jekyll/</link>
-        <guid isPermaLink="true">http://blog.lotas-smartman.net/finally-moved-to-jekyll/</guid>
+        <pubDate>Thu, 23 Apr 2015 00:00:00 -0500</pubDate>
+        <link>https://blog.lotas-smartman.net/finally-moved-to-jekyll/</link>
+        <guid isPermaLink="true">https://blog.lotas-smartman.net/finally-moved-to-jekyll/</guid>
         
         
         <category>Uncategorized</category>
@@ -138,9 +138,9 @@ well, it’s been a while. Nearly three years. Been busy and lazy for the last w
 &lt;p&gt;[update] this is what happens when you don’t post a lot. My caching has gone nuts and that image, which was put up as an after though, won’t resize… Feck it anyway!&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 22 Apr 2015 00:00:00 +0000</pubDate>
-        <link>http://blog.lotas-smartman.net/not-dead-just-lazy/</link>
-        <guid isPermaLink="true">http://blog.lotas-smartman.net/not-dead-just-lazy/</guid>
+        <pubDate>Wed, 22 Apr 2015 00:00:00 -0500</pubDate>
+        <link>https://blog.lotas-smartman.net/not-dead-just-lazy/</link>
+        <guid isPermaLink="true">https://blog.lotas-smartman.net/not-dead-just-lazy/</guid>
         
         
         <category>Uncategorized</category>
@@ -171,9 +171,9 @@ As the &lt;a href=&quot;http://www.comparethemeerkat.com/&quot;&gt;MeerKat says,
 &lt;p&gt;&lt;strong&gt;[UPDATED]&lt;/strong&gt; Want to monitor the progress of the download? &lt;strong&gt;bitsadmin /monitor&lt;/strong&gt; will show you the status of your transfer! Handy!&lt;/p&gt;
 
 </description>
-        <pubDate>Fri, 25 May 2012 00:00:00 +0000</pubDate>
-        <link>http://blog.lotas-smartman.net/bits-transfer-over-remote-desktop-with-powershell/</link>
-        <guid isPermaLink="true">http://blog.lotas-smartman.net/bits-transfer-over-remote-desktop-with-powershell/</guid>
+        <pubDate>Fri, 25 May 2012 00:00:00 -0500</pubDate>
+        <link>https://blog.lotas-smartman.net/bits-transfer-over-remote-desktop-with-powershell/</link>
+        <guid isPermaLink="true">https://blog.lotas-smartman.net/bits-transfer-over-remote-desktop-with-powershell/</guid>
         
         
         <category>HowTo</category>
@@ -203,9 +203,9 @@ As the &lt;a href=&quot;http://www.comparethemeerkat.com/&quot;&gt;MeerKat says,
 &lt;p&gt;anyway, using this as an idea, and adding in monkeys following each other depending on how they feel (more coin tossing) you could get a lot of tweets using some lower powered machines (worker nodes) and some beefy hardware… this is starting to sound like an interesting problem… now to figure out more… leave it with me…&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 04 Apr 2012 00:00:00 +0000</pubDate>
-        <link>http://blog.lotas-smartman.net/infinite-monkey-twitter/</link>
-        <guid isPermaLink="true">http://blog.lotas-smartman.net/infinite-monkey-twitter/</guid>
+        <pubDate>Wed, 04 Apr 2012 00:00:00 -0500</pubDate>
+        <link>https://blog.lotas-smartman.net/infinite-monkey-twitter/</link>
+        <guid isPermaLink="true">https://blog.lotas-smartman.net/infinite-monkey-twitter/</guid>
         
         <category>Code</category>
         
@@ -223,9 +223,9 @@ As the &lt;a href=&quot;http://www.comparethemeerkat.com/&quot;&gt;MeerKat says,
         <description>&lt;p&gt;So, my new podcast is now live! I am a podcaster again! for the next 3 weeks (Today, Tuesday 20th and Tuesday 27th) a new episode will auto publish. If you want to get them on your iPod, iPhone, i(Insert name here), Windows Phone, etc… Subscribe to the &lt;a href=&quot;http://feeds.feedburner.com/TiernansPodcast&quot;&gt;PodCast Feed here&lt;/a&gt;. Or you can download the files directly from &lt;a href=&quot;http://podcast.tiernanotoole.ie/index.php/archives/8&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 13 Mar 2012 00:00:00 +0000</pubDate>
-        <link>http://blog.lotas-smartman.net/tiernans-podcast-episode-1/</link>
-        <guid isPermaLink="true">http://blog.lotas-smartman.net/tiernans-podcast-episode-1/</guid>
+        <pubDate>Tue, 13 Mar 2012 00:00:00 -0500</pubDate>
+        <link>https://blog.lotas-smartman.net/tiernans-podcast-episode-1/</link>
+        <guid isPermaLink="true">https://blog.lotas-smartman.net/tiernans-podcast-episode-1/</guid>
         
         <category>Podcast</category>
         
@@ -308,9 +308,9 @@ As the &lt;a href=&quot;http://www.comparethemeerkat.com/&quot;&gt;MeerKat says,
 &lt;p&gt;This idea is not all that “pie in the sky” as it might sound. We have the Technology, we have the ability, we just need to link it all together… it’s the magic glue that is going to need to be developed, and I am now just wondering who is going do develop the magic glue? Apple? Microsoft? Google? They all could do it, Microsoft probably being the closest, but the question is not who will get there first, but who will do it the most integrated?&lt;/p&gt;
 
 </description>
-        <pubDate>Wed, 30 Nov 2011 00:00:00 +0000</pubDate>
-        <link>http://blog.lotas-smartman.net/5-screens-and-a-cloud/</link>
-        <guid isPermaLink="true">http://blog.lotas-smartman.net/5-screens-and-a-cloud/</guid>
+        <pubDate>Wed, 30 Nov 2011 00:00:00 -0600</pubDate>
+        <link>https://blog.lotas-smartman.net/5-screens-and-a-cloud/</link>
+        <guid isPermaLink="true">https://blog.lotas-smartman.net/5-screens-and-a-cloud/</guid>
         
         <category>Apple</category>
         
@@ -407,9 +407,9 @@ As the &lt;a href=&quot;http://www.comparethemeerkat.com/&quot;&gt;MeerKat says,
 &lt;/table&gt;
 
 </description>
-        <pubDate>Thu, 10 Nov 2011 00:00:00 +0000</pubDate>
-        <link>http://blog.lotas-smartman.net/new-backup-plan-out-with-jungle-disk-and-zmanda-cloud-backup-in-with-crashplan-mysqlbf-and-sqlbf/</link>
-        <guid isPermaLink="true">http://blog.lotas-smartman.net/new-backup-plan-out-with-jungle-disk-and-zmanda-cloud-backup-in-with-crashplan-mysqlbf-and-sqlbf/</guid>
+        <pubDate>Thu, 10 Nov 2011 00:00:00 -0600</pubDate>
+        <link>https://blog.lotas-smartman.net/new-backup-plan-out-with-jungle-disk-and-zmanda-cloud-backup-in-with-crashplan-mysqlbf-and-sqlbf/</link>
+        <guid isPermaLink="true">https://blog.lotas-smartman.net/new-backup-plan-out-with-jungle-disk-and-zmanda-cloud-backup-in-with-crashplan-mysqlbf-and-sqlbf/</guid>
         
         <category>Backup</category>
         
@@ -481,9 +481,9 @@ As the &lt;a href=&quot;http://www.comparethemeerkat.com/&quot;&gt;MeerKat says,
 &lt;p&gt;&lt;a href=&quot;http://www.dotnetkicks.com/kick/?url=http%3a%2f%2fblog.lotas-smartman.net%2fusing-dropbox-as-a-personal-git-and-mercurial-storage-area&quot;&gt;&lt;img src=&quot;http://dotnetkicks.com/Services/Images/KickItImageGenerator.ashx?url=http://blog.lotas-smartman.net/using-dropbox-as-a-personal-git-and-mercurial-storage-area/&quot; alt=&quot;kick it on DotNetKicks.com&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 </description>
-        <pubDate>Tue, 01 Nov 2011 00:00:00 +0000</pubDate>
-        <link>http://blog.lotas-smartman.net/using-dropbox-as-a-personal-git-and-mercurial-storage-area/</link>
-        <guid isPermaLink="true">http://blog.lotas-smartman.net/using-dropbox-as-a-personal-git-and-mercurial-storage-area/</guid>
+        <pubDate>Tue, 01 Nov 2011 00:00:00 -0500</pubDate>
+        <link>https://blog.lotas-smartman.net/using-dropbox-as-a-personal-git-and-mercurial-storage-area/</link>
+        <guid isPermaLink="true">https://blog.lotas-smartman.net/using-dropbox-as-a-personal-git-and-mercurial-storage-area/</guid>
         
         <category>dropbox</category>
         
