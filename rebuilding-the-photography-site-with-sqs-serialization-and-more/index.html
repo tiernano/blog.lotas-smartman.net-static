@@ -81,7 +81,7 @@
 
 <p>The next section is the processing stage. At the moment, a photo is uploaded in all its full glory (if taken with my 350D, its about 8MP in size and weighs in at roughly 4mb). this is placed in the processing queue. at the moment, the server does all the work. this is grand for the moment because there are very few photos uploaded at a time. but, it takes time. so, next idea: a proper queuing system. this is where <a href="http://www.amazon.com/gp/browse.html?node=13584001">Amazon SQS</a> comes in. so, the solution. A photo hits the web server to get processed. server uploads the original to S3, and generates a GUID based on this, which is placed in the SQS queue. a client then connects to the queue, and gets an item to process (there could be multiple clients so they shouldn’t get the same item). once it gets the item, it then downloads the original photo, does its processing (pull out all Meta Data, resize to the new sizes, upload to S3, place the binary blob on to S3 and then place data into the DB).</p>
 
-<p>Lets see what we can build over the weekend, shall we? <img src="http://blog.lotas-smartman.net/wp-includes/images/smilies/icon_smile.gif" alt=":)" class="wp-smiley" /></p>
+<p>Lets see what we can build over the weekend, shall we? :)</p>
 
 <p>[update] Another interesting idea Flickr has for their API is <a href="http://www.flickr.com/groups/api/discuss/72157594497877875/">Machine Tags</a>. So, for example, you could have the following types of tags (from the flickr site):</p>
 
