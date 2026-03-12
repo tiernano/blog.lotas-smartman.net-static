@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,20 +15,21 @@
     <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="39239214-dfb9-4965-981f-192c7f40ba4a" async></script>
 </head>
 
-<body>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-     crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6435972961836580"
-     data-ad-slot="4057413202"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    <header class="site-header">
+    <body>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
+             crossorigin="anonymous"></script>
+        <!-- blog.lotas-smartman.net-horiz -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6435972961836580"
+             data-ad-slot="4057413202"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+        <header class="site-header">
 
     <div class="wrapper">
 
@@ -54,84 +54,85 @@
 
 </header>
 
-    <div class="page-content">
-        <div class="wrapper">
-            <div class="post">
+        <div class="page-content">
+            <div class="wrapper">
+                <div class="post">
+    <header class="post-header">
+        <h1 class="post-title">Memcached, Amazon S3, Amazon EC2, Amazon SimpleDB and Amazon SQS</h1>
+        <p class="post-meta">Mar 24, 2008 • admin</p>
+    </header>
 
-  <header class="post-header">
-    <h1 class="post-title">Memcached, Amazon S3, Amazon EC2, Amazon SimpleDB and Amazon SQS</h1>
-    <p class="post-meta">Mar 24, 2008 • admin</p>
-  </header>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-  crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-  style="display:block"
-  data-ad-client="ca-pub-6435972961836580"
-  data-ad-slot="4057413202"
-  data-ad-format="auto"
-  data-full-width-responsive="true"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-  <article class="post-content">
-    <p mce_keep="true">I have been thinking a lot since the announcment of [Amazon&#8217;s SimpleDB][1]. This is now a very stratigic peice that allows very large, scalable web applications. I have been thinking of ways to use this, and one idea i have had is an image uploading site.</p>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
+         crossorigin="anonymous"></script>
+    <!-- blog.lotas-smartman.net-horiz -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6435972961836580"
+         data-ad-slot="4057413202"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <article class="post-content">
+        <p mce_keep="true">I have been thinking a lot since the announcment of [Amazon&#8217;s SimpleDB][1]. This is now a very stratigic peice that allows very large, scalable web applications. I have been thinking of ways to use this, and one idea i have had is an image uploading site.</p>
 <p mce_keep="true">The peices fit together as follows:</p>
 <p mce_keep="true">A couple of the small [EC2][2] instances as front end web servers. these would actually serve the images, take uploads of the images, generate the HTML to send to the brower, etc. Next, 1 or 2 large instances, which would act as Application Servers. These would sit in the back, running custom web service software, which would be called by the front end, and these would also talk to the SimpleDB backend and the Caching layer. There would be no need for a Database layer, as such, since all your data will be stored on [SimpleDB][3], but you would have a layer in the back of [Memcached Servers][4]. what would happen is when a request for the DB comes in, if its not already in cache, a query to SimpleDB goes out, and then its placed in cache. next time that request is made, no round trip to SimpleDB is required. </p>
 <p mce_keep="true">Also, a bunch of image processing servers would be handy to have. you would use [SQS][5] to queue items. your memcached servers or backend servers could be set to take images and process them, and if more then X number of images are in the queue, load up a new image processing instance. if X doubles, load 2 instances, etc. Images would be uploaded to S3, and could be servers either from your EC2 servers, or directly from S3. You could do things smart. If the user is making the request from somewhere close to the US, serve from EC2 (since the servers seem to be there). if the user is requesting from Europe or close, send them to your Europeen S3 site. </p>
 <p mce_keep="true">one of the limitations of SimpleDB is the 1024 byte limit for attributes. This could be solved by storing meta data, and larger text objects in an XML file, which is stored in S3. a link to this is stored in SimpleDB, and cached in Memcache for quick usage. </p>
 <p mce_keep="true">Amazon are definatly chaning the game for developing large sites. i hope i get my hands on a SimpleDB account soon! </p>
 
+    </article>
 
-  </article>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-  crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-  style="display:block"
-  data-ad-client="ca-pub-6435972961836580"
-  data-ad-slot="4057413202"
-  data-ad-format="auto"
-  data-full-width-responsive="true"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<div class="comments">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'tiernanscommscloset'; 
-    var disqus_url = 'http://blog.lotas-smartman.net/memcached-amazon-s3-amazon-ec2-amazon-simpledb-and-amazon-sqs/';
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; 
-dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || 
-document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a 
-href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span 
-class="logo-disqus">Disqus</span></a>
-</div>
-
-</div>
-
-        </div>
-    </div>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-    crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-6435972961836580"
-    data-ad-slot="4057413202"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    <footer class="site-footer">
+         crossorigin="anonymous"></script>
+    <!-- blog.lotas-smartman.net-horiz -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6435972961836580"
+         data-ad-slot="4057413202"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'tiernanscommscloset';
+            var disqus_url = 'http://blog.lotas-smartman.net/memcached-amazon-s3-amazon-ec2-amazon-simpledb-and-amazon-sqs/';
+            (function() {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
+             crossorigin="anonymous"></script>
+        <!-- blog.lotas-smartman.net-horiz -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6435972961836580"
+             data-ad-slot="4057413202"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+        <footer class="site-footer">
 
     <div class="wrapper">
 
@@ -179,7 +180,7 @@ class="logo-disqus">Disqus</span></a>
             <div class="footer-col  footer-col-3">
                 <p class="text">
                     Copyright (c) 2022 <a href="https://blog.lotas-smartman.net">Tiernan 
-OToole</a>. Page generated at:  2026-03-03 05:18:53 -0600 </p>
+OToole</a>. Page generated at:  2026-03-12 09:38:52 +0000 </p>
                 <!-- end #footer -->
                 <script type="text/javascript">
                     var vglnk = {
@@ -203,7 +204,5 @@ OToole</a>. Page generated at:  2026-03-03 05:18:53 -0600 </p>
     </div>
 
 </footer>
-
-</body>
-
+    </body>
 </html>

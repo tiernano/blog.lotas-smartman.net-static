@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,20 +15,21 @@
     <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="39239214-dfb9-4965-981f-192c7f40ba4a" async></script>
 </head>
 
-<body>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-     crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6435972961836580"
-     data-ad-slot="4057413202"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    <header class="site-header">
+    <body>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
+             crossorigin="anonymous"></script>
+        <!-- blog.lotas-smartman.net-horiz -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6435972961836580"
+             data-ad-slot="4057413202"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+        <header class="site-header">
 
     <div class="wrapper">
 
@@ -54,28 +54,29 @@
 
 </header>
 
-    <div class="page-content">
-        <div class="wrapper">
-            <div class="post">
+        <div class="page-content">
+            <div class="wrapper">
+                <div class="post">
+    <header class="post-header">
+        <h1 class="post-title">SkyNet, take 2</h1>
+        <p class="post-meta">Jun 12, 2008 • admin</p>
+    </header>
 
-  <header class="post-header">
-    <h1 class="post-title">SkyNet, take 2</h1>
-    <p class="post-meta">Jun 12, 2008 • admin</p>
-  </header>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-  crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-  style="display:block"
-  data-ad-client="ca-pub-6435972961836580"
-  data-ad-slot="4057413202"
-  data-ad-format="auto"
-  data-full-width-responsive="true"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-  <article class="post-content">
-    <p>So, a few days ago, i mentioned the <a href="http://blog.lotas-smartman.net/don-macaskill-on-skynet/">SmugMug SkyNet</a> system they have running for photo and video processing. Well, today i started to think about it a bit more, but not with virtual machines, but more physical machines. i suppose Virtual Instances could be used aswell, but physical hardware is what started me thinking, and he is my theory:</p>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
+         crossorigin="anonymous"></script>
+    <!-- blog.lotas-smartman.net-horiz -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6435972961836580"
+         data-ad-slot="4057413202"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <article class="post-content">
+        <p>So, a few days ago, i mentioned the <a href="http://blog.lotas-smartman.net/don-macaskill-on-skynet/">SmugMug SkyNet</a> system they have running for photo and video processing. Well, today i started to think about it a bit more, but not with virtual machines, but more physical machines. i suppose Virtual Instances could be used aswell, but physical hardware is what started me thinking, and he is my theory:</p>
 
 <p>It all starts with the Physical machine. I am thinking the Mac Mini (or, a couple of these) since they <a href="http://blog.lotas-smartman.net/mac-mini-as-a-hpc-compute-cluster/">make good HPC clusters</a>. You get a few of these runnning, say, Windows Server 2008, and enable <a href="http://en.wikipedia.org/wiki/Wake-on-LAN">Wake On Lan</a>. this is one of the important parst.</p>
 
@@ -94,55 +95,56 @@
 <p>i suppse the next question you have to ask your self is why? with virtualization being a big thing now, why have loads of full machines running? it could be procesisng power. if you need a lot of stuff processed, and its going to need 50 or 60 CPUs to run on at 100%, then sticking it on a machine with 8 cores aint going to solve anything… but sticking it on 32 mac minis, each with dual cores, could be handy…. Hmmm… starting to wonder about shutting down Virtual Hosts when load goes down… 32 mac minis, each dual core, running 64 instances to start. as instances are not needed any more, they are shutdwn using the Virtualization API (Hyper-V and PowerShell). when all a hosts instances are down, shut down the host till its needed again… youll be waiting a little longer for the whole thing (host and instance) to boot, but it would definatly save power!</p>
 
 
-  </article>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-  crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-  style="display:block"
-  data-ad-client="ca-pub-6435972961836580"
-  data-ad-slot="4057413202"
-  data-ad-format="auto"
-  data-full-width-responsive="true"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<div class="comments">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'tiernanscommscloset'; 
-    var disqus_url = 'http://blog.lotas-smartman.net/skynet-take-2/';
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; 
-dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || 
-document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a 
-href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span 
-class="logo-disqus">Disqus</span></a>
-</div>
+    </article>
 
-</div>
-
-        </div>
-    </div>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-    crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-6435972961836580"
-    data-ad-slot="4057413202"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    <footer class="site-footer">
+         crossorigin="anonymous"></script>
+    <!-- blog.lotas-smartman.net-horiz -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6435972961836580"
+         data-ad-slot="4057413202"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'tiernanscommscloset';
+            var disqus_url = 'http://blog.lotas-smartman.net/skynet-take-2/';
+            (function() {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
+             crossorigin="anonymous"></script>
+        <!-- blog.lotas-smartman.net-horiz -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6435972961836580"
+             data-ad-slot="4057413202"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+        <footer class="site-footer">
 
     <div class="wrapper">
 
@@ -190,7 +192,7 @@ class="logo-disqus">Disqus</span></a>
             <div class="footer-col  footer-col-3">
                 <p class="text">
                     Copyright (c) 2022 <a href="https://blog.lotas-smartman.net">Tiernan 
-OToole</a>. Page generated at:  2026-03-03 05:18:58 -0600 </p>
+OToole</a>. Page generated at:  2026-03-12 09:38:57 +0000 </p>
                 <!-- end #footer -->
                 <script type="text/javascript">
                     var vglnk = {
@@ -214,7 +216,5 @@ OToole</a>. Page generated at:  2026-03-03 05:18:58 -0600 </p>
     </div>
 
 </footer>
-
-</body>
-
+    </body>
 </html>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,20 +15,21 @@
     <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="39239214-dfb9-4965-981f-192c7f40ba4a" async></script>
 </head>
 
-<body>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-     crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6435972961836580"
-     data-ad-slot="4057413202"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    <header class="site-header">
+    <body>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
+             crossorigin="anonymous"></script>
+        <!-- blog.lotas-smartman.net-horiz -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6435972961836580"
+             data-ad-slot="4057413202"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+        <header class="site-header">
 
     <div class="wrapper">
 
@@ -54,28 +54,29 @@
 
 </header>
 
-    <div class="page-content">
-        <div class="wrapper">
-            <div class="post">
+        <div class="page-content">
+            <div class="wrapper">
+                <div class="post">
+    <header class="post-header">
+        <h1 class="post-title">rebuilding the photography site with SQS, Serialization and more</h1>
+        <p class="post-meta">Mar 24, 2008 • admin</p>
+    </header>
 
-  <header class="post-header">
-    <h1 class="post-title">rebuilding the photography site with SQS, Serialization and more</h1>
-    <p class="post-meta">Mar 24, 2008 • admin</p>
-  </header>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-  crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-  style="display:block"
-  data-ad-client="ca-pub-6435972961836580"
-  data-ad-slot="4057413202"
-  data-ad-format="auto"
-  data-full-width-responsive="true"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-  <article class="post-content">
-    <p>So, over the last couple of days I have been thinking about rebuilding the photography site to add more stuff to it. I <a href="http://blog.lotas-smartman.net/archive/2007/02/14/the-problem-with-building-a-solution-as-i-need-it.aspx">mentioned on Wednesday</a> what I wanted to add to it, so I wont go into much details here. Well, one of the sections I mentioned was “backup the database to S3″. Well, I have been thinking of how to do this, and came up with a cunning plan…</p>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
+         crossorigin="anonymous"></script>
+    <!-- blog.lotas-smartman.net-horiz -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6435972961836580"
+         data-ad-slot="4057413202"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <article class="post-content">
+        <p>So, over the last couple of days I have been thinking about rebuilding the photography site to add more stuff to it. I <a href="http://blog.lotas-smartman.net/archive/2007/02/14/the-problem-with-building-a-solution-as-i-need-it.aspx">mentioned on Wednesday</a> what I wanted to add to it, so I wont go into much details here. Well, one of the sections I mentioned was “backup the database to S3″. Well, I have been thinking of how to do this, and came up with a cunning plan…</p>
 
 <p>Binary Serialization. So, they theory is simple. each photo that is uploaded is a single entity. it has sub entities (versions, which are resized versions of the photo, meta data, which is basically a value and a name, and a tag, which is just used for easy tagging of the photos). So, the theory is that once the object is fully created (after the processing stage, which I will go into in a minute) the data is dumped into a binary blob, and uploaded to S3. If, for some reason, something goes wrong, the app can go looking for these blogs of data, import them, and be able to regenerate the DB from scratch, or at least from a blank DB. this also makes life easier for migrating to different boxes.</p>
 
@@ -100,55 +101,56 @@
 <p>Tags: <a href="http://technorati.com/tag/AmazonSQS" rel="tag">Amazon SQS</a> <a href="http://technorati.com/tag/AmazonS3" rel="tag">Amazon S3</a> <a href="http://technorati.com/tag/Photographysite" rel="tag">Photography site</a> <a href="http://technorati.com/tag/programming" rel="tag">programming</a></p>
 
 
-  </article>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-  crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-  style="display:block"
-  data-ad-client="ca-pub-6435972961836580"
-  data-ad-slot="4057413202"
-  data-ad-format="auto"
-  data-full-width-responsive="true"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<div class="comments">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'tiernanscommscloset'; 
-    var disqus_url = 'http://blog.lotas-smartman.net/rebuilding-the-photography-site-with-sqs-serialization-and-more/';
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; 
-dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || 
-document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a 
-href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span 
-class="logo-disqus">Disqus</span></a>
-</div>
+    </article>
 
-</div>
-
-        </div>
-    </div>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-    crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-6435972961836580"
-    data-ad-slot="4057413202"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    <footer class="site-footer">
+         crossorigin="anonymous"></script>
+    <!-- blog.lotas-smartman.net-horiz -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6435972961836580"
+         data-ad-slot="4057413202"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'tiernanscommscloset';
+            var disqus_url = 'http://blog.lotas-smartman.net/rebuilding-the-photography-site-with-sqs-serialization-and-more/';
+            (function() {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
+             crossorigin="anonymous"></script>
+        <!-- blog.lotas-smartman.net-horiz -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6435972961836580"
+             data-ad-slot="4057413202"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+        <footer class="site-footer">
 
     <div class="wrapper">
 
@@ -196,7 +198,7 @@ class="logo-disqus">Disqus</span></a>
             <div class="footer-col  footer-col-3">
                 <p class="text">
                     Copyright (c) 2022 <a href="https://blog.lotas-smartman.net">Tiernan 
-OToole</a>. Page generated at:  2026-03-03 05:18:55 -0600 </p>
+OToole</a>. Page generated at:  2026-03-12 09:38:53 +0000 </p>
                 <!-- end #footer -->
                 <script type="text/javascript">
                     var vglnk = {
@@ -220,7 +222,5 @@ OToole</a>. Page generated at:  2026-03-03 05:18:55 -0600 </p>
     </div>
 
 </footer>
-
-</body>
-
+    </body>
 </html>

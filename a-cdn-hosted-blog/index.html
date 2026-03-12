@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="vvCvFaO1zN32fL-kE_vCmlE2uHEETLnUjrarsVFRWD4" />
     <title>A CDN Hosted Blog</title>
-    <meta name="description" content="So, with the event of Amazon’s Cloud Front and RackSpace Cloud’s Cloud Files (with the backing of Limelight Networks) the world and its mother can now use ch...">
+    <meta name="description" content="So, with the event of Amazon’s Cloud Front and RackSpaceCloud’s Cloud Files (with the backing of Limelight Networks) the world and its mother can now use che...">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/main.css">
@@ -16,20 +15,21 @@
     <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="39239214-dfb9-4965-981f-192c7f40ba4a" async></script>
 </head>
 
-<body>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-     crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6435972961836580"
-     data-ad-slot="4057413202"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    <header class="site-header">
+    <body>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
+             crossorigin="anonymous"></script>
+        <!-- blog.lotas-smartman.net-horiz -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6435972961836580"
+             data-ad-slot="4057413202"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+        <header class="site-header">
 
     <div class="wrapper">
 
@@ -54,28 +54,29 @@
 
 </header>
 
-    <div class="page-content">
-        <div class="wrapper">
-            <div class="post">
+        <div class="page-content">
+            <div class="wrapper">
+                <div class="post">
+    <header class="post-header">
+        <h1 class="post-title">A CDN Hosted Blog</h1>
+        <p class="post-meta">Jul 3, 2010 • admin</p>
+    </header>
 
-  <header class="post-header">
-    <h1 class="post-title">A CDN Hosted Blog</h1>
-    <p class="post-meta">Jul 3, 2010 • admin</p>
-  </header>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-  crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-  style="display:block"
-  data-ad-client="ca-pub-6435972961836580"
-  data-ad-slot="4057413202"
-  data-ad-format="auto"
-  data-full-width-responsive="true"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-  <article class="post-content">
-    <p>So, with the event of <a href="http://aws.amazon.com/cloudfront/">Amazon’s Cloud Front</a> and <a href="http://www.rackspacecloud.com/cloud_hosting_products/files">RackSpace</a><a href="http://www.rackspacecloud.com/cloud_hosting_products/files"> Cloud’s Cloud Files</a> (with the backing of <a href="http://uk.limelightnetworks.com/index.php">Limelight Networks</a>) the world and its mother can now use cheap and cherfull CDNs for hosting images, CSS and JS files for their blogs. but what about the rest of the blog?</p>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
+         crossorigin="anonymous"></script>
+    <!-- blog.lotas-smartman.net-horiz -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6435972961836580"
+         data-ad-slot="4057413202"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <article class="post-content">
+        <p>So, with the event of <a href="http://aws.amazon.com/cloudfront/">Amazon’s Cloud Front</a> and <a href="http://www.rackspacecloud.com/cloud_hosting_products/files">RackSpace</a><a href="http://www.rackspacecloud.com/cloud_hosting_products/files">Cloud’s Cloud Files</a> (with the backing of <a href="http://uk.limelightnetworks.com/index.php">Limelight Networks</a>) the world and its mother can now use cheap and cherfull CDNs for hosting images, CSS and JS files for their blogs. but what about the rest of the blog?</p>
 
 <p>In theory, a blog is 99% static. With the help of the likes of <a href="http://www.disqus.com">Disqus</a>, you dont even need to manage your own comments. so, other than updates to the core template (which is probably not very often) and new blog posts (which for me is currently not very often), the rest of the site is very static. So, why cant that be hosted in a CDN? I am using a plugin on my WordPress install called <a href="http://wordpress.org/extend/plugins/w3-total-cache/">W3 Total Cache</a>, and one of the options is to generate the HTML for a page, save it to disk, use a URL Rewrite to point to that HTML file for a certin amount of time, and, in theory, take some load of the server… the first time the page is generated, it should run though the PHP CGI engine (this site runs on IIS7 now) and then be built into a HTML page and passed to IIS to serve. the second time, its just served from IIS from disk, as a standard HTML page… and this got me thinking…</p>
 
@@ -86,55 +87,56 @@
 <p>[Update] added some code on GitHub with a demo of a HTML Module. some work needs to be done, but will add it in over time…</p>
 
 
-  </article>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-  crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-  style="display:block"
-  data-ad-client="ca-pub-6435972961836580"
-  data-ad-slot="4057413202"
-  data-ad-format="auto"
-  data-full-width-responsive="true"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<div class="comments">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'tiernanscommscloset'; 
-    var disqus_url = 'http://blog.lotas-smartman.net/a-cdn-hosted-blog/';
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; 
-dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || 
-document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a 
-href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span 
-class="logo-disqus">Disqus</span></a>
-</div>
+    </article>
 
-</div>
-
-        </div>
-    </div>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-    crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-6435972961836580"
-    data-ad-slot="4057413202"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    <footer class="site-footer">
+         crossorigin="anonymous"></script>
+    <!-- blog.lotas-smartman.net-horiz -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6435972961836580"
+         data-ad-slot="4057413202"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'tiernanscommscloset';
+            var disqus_url = 'http://blog.lotas-smartman.net/a-cdn-hosted-blog/';
+            (function() {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
+             crossorigin="anonymous"></script>
+        <!-- blog.lotas-smartman.net-horiz -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6435972961836580"
+             data-ad-slot="4057413202"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+        <footer class="site-footer">
 
     <div class="wrapper">
 
@@ -182,7 +184,7 @@ class="logo-disqus">Disqus</span></a>
             <div class="footer-col  footer-col-3">
                 <p class="text">
                     Copyright (c) 2022 <a href="https://blog.lotas-smartman.net">Tiernan 
-OToole</a>. Page generated at:  2026-03-03 05:18:58 -0600 </p>
+OToole</a>. Page generated at:  2026-03-12 09:38:57 +0000 </p>
                 <!-- end #footer -->
                 <script type="text/javascript">
                     var vglnk = {
@@ -206,7 +208,5 @@ OToole</a>. Page generated at:  2026-03-03 05:18:58 -0600 </p>
     </div>
 
 </footer>
-
-</body>
-
+    </body>
 </html>

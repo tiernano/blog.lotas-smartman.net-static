@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,20 +15,21 @@
     <script src="https://beamanalytics.b-cdn.net/beam.min.js" data-token="39239214-dfb9-4965-981f-192c7f40ba4a" async></script>
 </head>
 
-<body>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-     crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6435972961836580"
-     data-ad-slot="4057413202"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    <header class="site-header">
+    <body>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
+             crossorigin="anonymous"></script>
+        <!-- blog.lotas-smartman.net-horiz -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6435972961836580"
+             data-ad-slot="4057413202"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+        <header class="site-header">
 
     <div class="wrapper">
 
@@ -54,28 +54,29 @@
 
 </header>
 
-    <div class="page-content">
-        <div class="wrapper">
-            <div class="post">
+        <div class="page-content">
+            <div class="wrapper">
+                <div class="post">
+    <header class="post-header">
+        <h1 class="post-title">Rails Conf, Scribd, Scaling rails and custom traffic analysis</h1>
+        <p class="post-meta">Mar 24, 2008 • admin</p>
+    </header>
 
-  <header class="post-header">
-    <h1 class="post-title">Rails Conf, Scribd, Scaling rails and custom traffic analysis</h1>
-    <p class="post-meta">Mar 24, 2008 • admin</p>
-  </header>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-  crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-  style="display:block"
-  data-ad-client="ca-pub-6435972961836580"
-  data-ad-slot="4057413202"
-  data-ad-format="auto"
-  data-full-width-responsive="true"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-  <article class="post-content">
-    <p>A while back i found this article over at O’Reilly Radar about the <a class="" href="http://radar.oreilly.com/archives/2007/05/first_day_at_ra.html">first day of Rails Conf</a>. Since i am a geek and im interested in Scaling web applications (cause you never know…) I started reading the <a class="" href="http://www.scribd.com/doc/49575/Scaling-Rails-Presentation">Scribd Scalling Rails Presentation</a>. Its a good presentation, and its not just handy for Rails users. the idea of Fragment Caching is very cool. But, back to the original idea of the post: custom traffic analysis. This is quite a cool idea. In the presentation, they show some code on what the DB should look like. So, i wrote some code, in C# of course, to use this DB and build my own traffic analysis section to a site i am building. here is some of that code:</p>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
+         crossorigin="anonymous"></script>
+    <!-- blog.lotas-smartman.net-horiz -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6435972961836580"
+         data-ad-slot="4057413202"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <article class="post-content">
+        <p>A while back i found this article over at O’Reilly Radar about the <a class="" href="http://radar.oreilly.com/archives/2007/05/first_day_at_ra.html">first day of Rails Conf</a>. Since i am a geek and im interested in Scaling web applications (cause you never know…) I started reading the <a class="" href="http://www.scribd.com/doc/49575/Scaling-Rails-Presentation">Scribd Scalling Rails Presentation</a>. Its a good presentation, and its not just handy for Rails users. the idea of Fragment Caching is very cool. But, back to the original idea of the post: custom traffic analysis. This is quite a cool idea. In the presentation, they show some code on what the DB should look like. So, i wrote some code, in C# of course, to use this DB and build my own traffic analysis section to a site i am building. here is some of that code:</p>
 
 <p> </p>
 
@@ -96,18 +97,18 @@
 
 <p>The idea is that on each page you want to count, you would use the following code:</p>
 
-<font color="#2b91af" size="2">&lt;/p&gt; 
+<font color="#2b91af" size="2">&lt;/p&gt;
 
 <p>
-  Counter&lt;/font&gt;<font size="2"> c = </font><font color="#0000ff" size="2">new</font><font size="2"> </font><font color="#2b91af" size="2">Counter</font><font size="2">(context.Request);&lt;/p&gt; 
+  Counter&lt;/font&gt;<font size="2"> c = </font><font color="#0000ff" size="2">new</font><font size="2"> </font><font color="#2b91af" size="2">Counter</font><font size="2">(context.Request);&lt;/p&gt;
   
   <p>
     &lt;/font&gt;
   </p>
   
   <p>
-    well, not exactly that code. this was used in an ASHX file. normally it would be&nbsp;<font color="#2b91af" size="2">&lt;/p&gt; 
-    
+    well, not exactly that code. this was used in an ASHX file. normally it would be&nbsp;<font color="#2b91af" size="2">&lt;/p&gt;
+
     <p>
       Counter&lt;/font&gt;<font size="2"> c = </font><font color="#0000ff" size="2">new</font><font size="2"> </font><font color="#2b91af" size="2">Counter</font><font size="2">(Request);</font>
     </p>
@@ -127,55 +128,56 @@
  [1]: http://11011.net/software/vspaste
 </font></p></font></p></font>
 
-  </article>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-  crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-  style="display:block"
-  data-ad-client="ca-pub-6435972961836580"
-  data-ad-slot="4057413202"
-  data-ad-format="auto"
-  data-full-width-responsive="true"></ins>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-<div class="comments">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'tiernanscommscloset'; 
-    var disqus_url = 'http://blog.lotas-smartman.net/rails-conf-scribd-scaling-rails-and-custom-traffic-analysis/';
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; 
-dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || 
-document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a 
-href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span 
-class="logo-disqus">Disqus</span></a>
-</div>
+    </article>
 
-</div>
-
-        </div>
-    </div>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
-    crossorigin="anonymous"></script>
-<!-- blog.lotas-smartman.net-horiz -->
-<ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-6435972961836580"
-    data-ad-slot="4057413202"
-    data-ad-format="auto"
-    data-full-width-responsive="true"></ins>
-<script>
-    (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    <footer class="site-footer">
+         crossorigin="anonymous"></script>
+    <!-- blog.lotas-smartman.net-horiz -->
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-6435972961836580"
+         data-ad-slot="4057413202"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+
+    <div class="comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            var disqus_shortname = 'tiernanscommscloset';
+            var disqus_url = 'http://blog.lotas-smartman.net/rails-conf-scribd-scaling-rails-and-custom-traffic-analysis/';
+            (function() {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6435972961836580"
+             crossorigin="anonymous"></script>
+        <!-- blog.lotas-smartman.net-horiz -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6435972961836580"
+             data-ad-slot="4057413202"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+
+        <footer class="site-footer">
 
     <div class="wrapper">
 
@@ -223,7 +225,7 @@ class="logo-disqus">Disqus</span></a>
             <div class="footer-col  footer-col-3">
                 <p class="text">
                     Copyright (c) 2022 <a href="https://blog.lotas-smartman.net">Tiernan 
-OToole</a>. Page generated at:  2026-03-03 05:18:55 -0600 </p>
+OToole</a>. Page generated at:  2026-03-12 09:38:53 +0000 </p>
                 <!-- end #footer -->
                 <script type="text/javascript">
                     var vglnk = {
@@ -247,7 +249,5 @@ OToole</a>. Page generated at:  2026-03-03 05:18:55 -0600 </p>
     </div>
 
 </footer>
-
-</body>
-
+    </body>
 </html>
